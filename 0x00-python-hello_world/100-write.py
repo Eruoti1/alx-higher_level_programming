@@ -1,22 +1,4 @@
-#include "lists.h"
-
-int check_cycle(listint_t *list)
-{
-	listint_t *temp, *current;
-	int counter = 0, i;
-
-	current = list;
-	while(current)
-	{
-		temp = list;
-		for(i = 0; i < counter; i++)
-		{
-			if (current == temp)
-				return (1);
-			temp = temp->next;
-		}
-		counter++;
-		current = current->next;
-	}
-	return (0);
-}
+#!/usr/bin/python3
+import sys
+sys.stderr.write("and that piece of art is useful - Dora Korpar, 2015-10-19\n")
+quit(1)
